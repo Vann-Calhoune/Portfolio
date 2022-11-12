@@ -15,21 +15,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 15px;
+    padding-bottom: 2px;
     font-size: 20px;
     width: 100vw;
     color: black;
     background-color: rgb(0, 59, 0);
 }
 
+
+
 .navLinks {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
+    font-family: 'Teko', sans-serif;
     
     
+    
+    
+}
+
+li {
+    list-style: none;
 }
 
 .landingArea {
@@ -42,22 +53,31 @@
     background-image: url(/images/matrix.webp);
     /* background-size: cover; */
     color: Green;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
 }
+
 
 .aboutArea, .projectArea, .contactArea {
     /* border: 1px solid black; */
     background-color: #303030;
     padding: 3rem;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
 
 }
 
 .projectArea {
     background-color: #404040;
+    padding-top: 6rem;
 }
 
 
 .categories {
     text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 form {
@@ -71,17 +91,25 @@ form {
     height: 75vh;
     border: solid 1px black;
     border-radius: 10px;
-
+    margin-left: 15vw;
+    margin-right: 15vw;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
 }
 
 label > input {
     height: 5vh;
-    width: 65vw;
+    width: 40vw;
+    border-radius: 10px;
 }
 
 textarea {
     height: 20vh;
-    width: 65vw;
+    width: 40vw;
+    border-radius: 10px;
 }
 
 label {
@@ -96,11 +124,11 @@ a {
     
 }
 
-#goatTakes, #ticTacToe {
+#goatTakes, #ticTacToe, #aboutContent {
     display: flex;
     flex-direction: column;
    /* border: 1px solid black; */
-   width: 100%;
+    width: 100%;
     margin-bottom: 10vh;
     align-items: center;
     gap: 25px;
@@ -111,15 +139,93 @@ a {
 
 img {
     max-width: 50vw;
+}
+
+p {
+    max-width: 60vw;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+#skillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+#skillsGrid > li {
+    display: flex;
+    background-color: black;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+   
     
 }
 
-#content {
-    /* padding: 3rem; */
+ul > a > img {
+    width: 40px;
+    height: 40px;
 }
 
+.navLinks > img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+    
+}
 
-p {
-    max-width: 50vw;
+.projectImage {
+    border-radius: 10px;
+}
+
+.clickable {
+    background-color: rgb(0, 59, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button {
+    width: 10vw;
+    height: 10vh;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(0, 59, 0);
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    color: black;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+textarea {
+    color: black;
+    padding: 5px;
+}
+
+iframe {
+    border-radius: 10px;
+    width: 50vw;
+    height: 40vh;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h1 {
+    font-size: 70px;
 }
