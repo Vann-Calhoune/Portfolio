@@ -229,3 +229,98 @@ h2 {
 h1 {
     font-size: 70px;
 }
+
+@media (min-width: 600px) {
+    nav > .menuIcon {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+  
+    .navMenu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color:rgb(0, 59, 0);
+      width: 100vw;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .navItem {
+      margin: 16px 0;
+    }
+  
+    .navMenu.active {
+      left: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .clickable {
+        padding: 0px;
+    }
+ 
+    form {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        width: 30vw;
+        height: 5vh;
+    }
+
+    #skillsGrid {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .projectImage {
+        height: 30vh;
+    }
+
+    img {
+        max-width: 90vw;
+    }
+
+    iframe {
+        width: 90vw;
+    }
+
+
+   
+  }
+
+  @media (max-width: 375px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .aboutArea, .projectArea, .contactArea {
+        padding: 1rem;
+    }
+  }
+
