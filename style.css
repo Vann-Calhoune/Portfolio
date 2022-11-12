@@ -230,6 +230,20 @@ h1 {
     font-size: 70px;
 }
 
+@media (max-width: 800px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+  }
+
 @media (min-width: 600px) {
     nav > .menuIcon {
       display: none;
@@ -301,8 +315,14 @@ h1 {
         width: 90vw;
     }
 
+    form {
+        padding: 10px;
+    }
 
-   
+    .contactArea {
+        padding-top: 4rem;
+    }
+    
   }
 
   @media (max-width: 375px) {
@@ -319,8 +339,8 @@ h1 {
         font-size: 20px;
     }
 
-    .aboutArea, .projectArea, .contactArea {
-        padding: 1rem;
-    }
+   
   }
+
+ 
 
