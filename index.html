@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vann's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron&family=Teko:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="headBar">
         <ul class="navLinks">
-            <li>linkedIn</li>
-            <li>Resume</li>
-            <li></li>
+            <a href="https://www.linkedin.com/in/vann-calhoune-b34831a4/" target="_blank"><img Title="LinkedIn Profile" src="/images/linkedIn.png"></a>
+            <a href="/files/resume.pdf" target="_blank"><img title="Resume" src="/images/resume.png"></a>
         </ul>
         <nav>
-            <ul class="navLinks">
-                <a href="#home"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#project"><li>Projects</li></a>
-                <a href="#contact"><li>Contact</li></a>
+            <img class="menuIcon" src="/images/menu.png">
+            <ul class="navLinks hidden--mobile navMenu">
+                <a class="navItem" href="#home"><img title="Home" src="/images/home.png"></a>
+                <a class="navItem" href="#about"><img title="About" src="/images/about.png"></a>
+                <a class="navItem" href="#project">
+                    <img title="Projects" src="/images/projects.png">
+                </a>
+                <a class="linkContainer navItem" href="#contact">
+                    <img title="Contact" src="/images/contact.png">
+                </a>
             </ul>
         </nav>
     </div>
@@ -29,68 +39,71 @@
     </div>
     <div id="content">
         <div id="about" class="aboutArea">
-            <h1 class="categories">About</h1>
-            <p>My name is Vann Calhoune. I am a 26 year old full stack Web Developer with a passion for software development. I'm from Kansas City, Missouri and I earned my associates degree from Central Christian College of Kansas in 2017. I am open to job opportunities and freelance projects.</p>
-            <h2>Skills</h2>
-            <ul>
-                <li>Javascript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>MongoDB</li>
-                <li>Third Party and Custom APIs</li>
-                <li>Agile Methodologies</li>
-                <li>Responsive Web Design</li>
-                <li>Git and Github</li>
-                <li>Bootstrap</li>
-                <li>NoSQL</li>
-            </ul>
-
+            <div id="aboutContent">
+                <h1 class="categories">About</h1>
+                <p>My name is Vann Calhoune. I am a 26 year old full stack Web Developer with a passion for software development. I'm from Kansas City, Missouri and I earned my associates degree from Central Christian College of Kansas in 2017. I am open to job opportunities and freelance projects. Click <a href="/files/resume.pdf" target="_blank"><span class="clickable">Here</span></a> to view my resume. Click <a href="#contact" class="clickable">Here</a> to contact me.</p>
+                <h2>Skills</h2>
+                <ul id="skillsGrid">
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>Third Party and Custom APIs</li>
+                    <li>Agile Methodologies</li>
+                    <li>Responsive Web Design</li>
+                    <li>Git and Github</li>
+                    <li>Bootstrap</li>
+                    <li>NoSQL</li>
+                </ul>
+            </div> 
         </div>
         <div id="project" class="projectArea">
             <h1 class="categories">Projects</h1>
             <div>
                 <div id="goatTakes">
-                    <h2>Goat Takes</h2>
-                    <img src="/images/goat.png">
+                    <h2 class="projectTitles">Goat Takes</h2>
+                    <a href="https://goattakes.netlify.app" target="_blank"><img class="projectImage" src="/images/goat.png"></a>
                     
                     
-                    <p>A full stack SPA for basketball enthusiasts! This project was completed while attending Savvy Coders Full Stack Development Boot camp. It is a blog with an interactive ranking feature and a compare feature. Technologies used include: HTML, CSS, Javascript, Node.js, Express.js, MongoDB, Heroku, third party APIs and Custom APis</p>
+                    <p>A full stack SPA for basketball enthusiasts! This project was completed while attending Savvy Coders Full Stack Development Boot camp. It is a blog with an interactive ranking feature and a compare feature. Technologies used include: HTML, CSS, Javascript, Node.js, Express.js, MongoDB, Heroku, third party APIs and Custom APIs. Click <a href="https://goattakes.netlify.app" target="_blank"><span class="clickable">Here</span></a> to see the project and <a href="https://github.com/Vann-Calhoune/Capstone" target="_blank"><span class="clickable">Here</span></a> to see the code. Below, I demonstrate how the application works. This is my presentation during my demo day with Savvy Coders.  </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WJYSLlOBv8s?start=2047&end=2695" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div id="ticTacToe">
-                    <h2>Tic Tac Toe</h2>
-                    <img src="/images/ticTacToe.png">
+                    <h2 class="projectTitles">Tic Tac Toe</h2>
+                    <a href="https://tictactoeeeee.netlify.app" target="_blank"><img class="projectImage" src="/images/ticTacToe.png"></a>
                     
-                    <p>Basic Tic Tac Toe game built using React.js.</p>
+                    <p>Basic Tic Tac Toe game built using React.js. Technologies used include: HTML, CSS and React.js. Click <a href="https://tictactoeeeee.netlify.app" target="_blank"><span class="clickable">Here</span></a> to see the project and <a href="https://github.com/Vann-Calhoune/tic-tac-toe" target="_blank"><span class="clickable">Here</span></a> to see the code.</p>
                 </div>
-
-
 
             </div>
         </div>
         <div id="contact" class="contactArea">
             <h1 class="categories">Contact</h1>
             <form
-        action="https://formspree.io/f/xwkzaada"
-        method="POST"
-            >
-            <label>
-                Name:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Message:
-                <textarea name="message"></textarea>
-            </label>
-            <button type="submit">Send</button>
+            action="https://formspree.io/f/xwkzaada"
+            method="POST"
+                >
+                <p>Send me an email @ VannCalhoune@yahoo.com or fill out the form below with any questions/inquires.</p>
+                <label>
+                    Name:
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Message:
+                    <textarea name="message" required></textarea>
+                </label>
+                <button type="submit">Send</button>
             </form>
-            </div>
         </div>
+    </div>
+    <script src="index.js"> </script>
 </body>
 </html>
