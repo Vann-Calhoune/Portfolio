@@ -33,10 +33,10 @@
     align-items: center;
     justify-content: center;
     font-family: 'Teko', sans-serif;
-    
-    
-    
-    
+
+
+
+
 }
 
 li {
@@ -51,7 +51,6 @@ li {
     height: 100vh;
     width: 100vw;
     background-image: url(/images/matrix.webp);
-    /* background-size: cover; */
     color: Green;
     font-size: 25px;
     font-family: 'Orbitron', sans-serif;
@@ -59,7 +58,6 @@ li {
 
 
 .aboutArea, .projectArea, .contactArea {
-    /* border: 1px solid black; */
     background-color: #303030;
     padding: 3rem;
     font-family: 'Teko', sans-serif;
@@ -83,7 +81,6 @@ li {
 form {
     display: flex;
     flex-direction: column;
-    /* margin: 2rem; */
     padding: 1rem;
     justify-content: center;
     align-items: center;
@@ -93,9 +90,9 @@ form {
     border-radius: 10px;
     margin-left: 15vw;
     margin-right: 15vw;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-              0 2px 2px rgba(0,0,0,0.12), 
-              0 4px 4px rgba(0,0,0,0.12), 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+              0 2px 2px rgba(0,0,0,0.12),
+              0 4px 4px rgba(0,0,0,0.12),
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
 }
@@ -120,21 +117,18 @@ label {
 
 a {
     text-decoration: none;
-    color: white;  
-    
+    color: white;
+
 }
 
 #goatTakes, #ticTacToe, #aboutContent {
     display: flex;
     flex-direction: column;
-   /* border: 1px solid black; */
     width: 100%;
     margin-bottom: 10vh;
     align-items: center;
     gap: 25px;
     margin-top: 5vh;
-    /* margin: 2rem; */
-    
 }
 
 img {
@@ -162,8 +156,8 @@ p {
     align-items: center;
     justify-content: center;
     padding: 5px;
-   
-    
+
+
 }
 
 ul > a > img {
@@ -175,7 +169,7 @@ ul > a > img {
     width: 45px;
     height: 45px;
     margin-bottom: 10px;
-    
+
 }
 
 .projectImage {
@@ -195,7 +189,7 @@ button {
     border-radius: 6px;
     color: white;
     background-color: rgb(0, 59, 0);
-    
+
 }
 
 button:hover {
@@ -230,6 +224,14 @@ h1 {
     font-size: 70px;
 }
 
+#brainList > li  {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
 @media (max-width: 800px) {
     h1 {
         font-size: 55px;
@@ -251,7 +253,7 @@ h1 {
   }
 
   @media (max-width: 600px) {
-  
+
     .navMenu {
       position: fixed;
       left: -100%;
@@ -263,11 +265,11 @@ h1 {
       text-align: center;
       transition: 0.3s;
     }
-  
+
     .navItem {
       margin: 16px 0;
     }
-  
+
     .navMenu.active {
       left: 0;
     }
@@ -287,7 +289,7 @@ h1 {
     .clickable {
         padding: 0px;
     }
- 
+
     form {
         margin: 0;
         padding: 0;
@@ -302,7 +304,7 @@ h1 {
         padding: 10px;
         margin: 10px;
     }
-    
+
     .projectImage {
         height: 30vh;
     }
@@ -322,7 +324,11 @@ h1 {
     .contactArea {
         padding-top: 4rem;
     }
-    
+
+
+
+
+
   }
 
   @media (max-width: 375px) {
@@ -339,8 +345,8 @@ h1 {
         font-size: 20px;
     }
 
-   
+
   }
 
- 
+
 
