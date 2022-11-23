@@ -121,7 +121,7 @@ a {
 
 }
 
-#goatTakes, #ticTacToe, #aboutContent {
+#goatTakes, #ticTacToe, #aboutContent, #expenseTracker {
     display: flex;
     flex-direction: column;
     width: 100%;
