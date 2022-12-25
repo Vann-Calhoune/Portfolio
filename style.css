@@ -121,7 +121,7 @@ a {
 
 }
 
-#goatTakes, #ticTacToe, #aboutContent, #expenseTracker {
+#goatTakes, #ticTacToe, #aboutContent, #expenseTracker, #realEstate {
     display: flex;
     flex-direction: column;
     width: 100%;
