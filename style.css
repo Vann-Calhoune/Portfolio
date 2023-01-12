@@ -121,7 +121,7 @@ a {
 
 }
 
-#goatTakes, #ticTacToe, #aboutContent, #expenseTracker, #realEstate {
+#goatTakes, #ticTacToe, #aboutContent, #expenseTracker, #realEstate, #what2eat {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -174,6 +174,12 @@ ul > a > img {
 
 .projectImage {
     border-radius: 10px;
+    height: 30vh;
+}
+
+#whatEat {
+height:45vh;
+
 }
 
 .clickable {
@@ -305,9 +311,7 @@ h1 {
         margin: 10px;
     }
 
-    .projectImage {
-        height: 30vh;
-    }
+
 
     img {
         max-width: 90vw;
